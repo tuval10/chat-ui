@@ -26,17 +26,25 @@
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
+    "lodash": "^4.17.5",
+    "moment": "^2.21.0",
     "node-sass": "^4.6.1",
+    "node-uuid": "^1.4.8",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
+    "prop-types": "^15.6.1",
     "raf": "3.4.0",
     "react": "^16.1.1",
     "react-dev-utils": "^4.2.1",
     "react-dom": "^16.1.1",
+    "react-moment-proptypes": "^1.5.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
+    "redux-form": "^7.3.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
     "sass-loader": "^6.0.6",
     "semantic-ui-css": "^2.2.12",
     "semantic-ui-react": "^0.76.0",
@@ -54,7 +62,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
+    "test": "node $NODE_DEBUG_OPTION scripts/test.js --env=jsdom",
     "submit": "node scripts/submit"
   },
   "jest": {
@@ -89,6 +97,9 @@
       "web.jsx",
       "jsx",
       "node"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
     ]
   },
   "babel": {
@@ -98,5 +109,13 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
+    "react-test-renderer": "^16.2.0",
+    "redux-mock-store": "^1.5.1",
+    "socket-io-mock": "^1.0.1"
   }
 }

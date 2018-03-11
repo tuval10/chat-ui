@@ -1,0 +1,3 @@
+clear container/index.jsx
+ask about avatars - from server or local
+remove debugger

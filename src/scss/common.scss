@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  max-width: 1200px;
+  margin: auto;
+  border: 2px solid #e5e6e6;
+  border-radius: 9px;
+
+  div#root {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .loading {
+    position: fixed;
+    top: calc(50% - 10px);
+    width: 100vW;
+    max-width: 1200px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .header {
+    text-align: center;
+    background-color: #0082DD;
+    height: 150px;
+    padding: 20px;
+    color: white;
+
+    .header-text {
+      font-size: 1.5em;
+    }
+
+    img.ui.tiny.image {
+      margin: 15px auto;
+    }
+  }
+}

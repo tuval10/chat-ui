@@ -1,0 +1,45 @@
+.messages-list {
+  height: calc(100vh - 268px);
+  overflow: auto;
+
+  .message-item{
+    margin: 0 11px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e6e6;
+
+    &.mine{
+      background-color: #e4e4e4;
+    }
+  }
+}
+
+.message-details {
+  font-size: 13px;
+  line-height: 18px;
+  color: #7b7f83;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  .username {
+    color: #373e44;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  .posted-at {
+    margin-left: 14px;
+    font-size: 11px;
+  }
+}
+
+.message-text {
+  margin: -25px 0 0px 59px;
+  font-size: 15px;
+  line-height: 20px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  zoom: 1;
+}

@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MessageItem component renders correctly when form is pristine 1`] = `
+<form
+  className="form-container"
+  onSubmit={[Function]}
+>
+  <div
+    className="fields-container"
+  >
+    <Field
+      component={[Function]}
+      name="username"
+      placeholder="Your nickname..."
+      type="text"
+    />
+    <Field
+      component={[Function]}
+      name="text"
+      placeholder="Add a message..."
+      type="text"
+    />
+  </div>
+  <div
+    className="send-container"
+  >
+    <button
+      className="send-button brand-bg-color"
+      disabled={true}
+      type="submit"
+    >
+      Send
+    </button>
+  </div>
+</form>
+`;
+
+exports[`MessageItem component renders correctly when ready to submit 1`] = `
+<form
+  className="form-container"
+  onSubmit={[Function]}
+>
+  <div
+    className="fields-container"
+  >
+    <Field
+      component={[Function]}
+      name="username"
+      placeholder="Your nickname..."
+      type="text"
+    />
+    <Field
+      component={[Function]}
+      name="text"
+      placeholder="Add a message..."
+      type="text"
+    />
+  </div>
+  <div
+    className="send-container"
+  >
+    <button
+      className="send-button brand-bg-color"
+      disabled={false}
+      type="submit"
+    >
+      Send
+    </button>
+  </div>
+</form>
+`;
+
+exports[`MessageItem component renders correctly when submitting 1`] = `
+<form
+  className="form-container"
+  onSubmit={[Function]}
+>
+  <div
+    className="fields-container"
+  >
+    <Field
+      component={[Function]}
+      name="username"
+      placeholder="Your nickname..."
+      type="text"
+    />
+    <Field
+      component={[Function]}
+      name="text"
+      placeholder="Add a message..."
+      type="text"
+    />
+  </div>
+  <div
+    className="send-container"
+  >
+    <button
+      className="send-button brand-bg-color"
+      disabled={true}
+      type="submit"
+    >
+      Send
+    </button>
+  </div>
+</form>
+`;

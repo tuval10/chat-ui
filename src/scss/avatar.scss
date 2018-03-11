@@ -1,0 +1,18 @@
+.avatar-container {
+  margin-right: 15px;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(127, 166, 179, .3);
+}
+
+.fixed-bottom-container .avatar-container {
+  float: left;
+}
+
+img.avatar-icon {
+  fill: #c15a5a;
+  margin: 12px;
+  height: 20px;
+  width: 20px;
+}

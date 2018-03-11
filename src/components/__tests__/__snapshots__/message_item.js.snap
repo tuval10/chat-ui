@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MessageItem component renders correctly when message belongs to user 1`] = `
+<div
+  className="message-item mine"
+>
+  <div
+    className="message-details"
+  >
+    <div
+      className="avatar-container"
+    >
+      <img
+        alt="user-logo"
+        className="avatar-icon"
+        src="005-bullbasaur.png"
+      />
+    </div>
+    <div
+      className="username"
+    >
+      stub_username
+    </div>
+    <div
+      className="posted-at"
+    >
+      00:34
+    </div>
+  </div>
+  <div
+    className="message-text"
+  >
+    stub message
+  </div>
+</div>
+`;
+
+exports[`MessageItem component renders correctly when message does not belong to user 1`] = `
+<div
+  className="message-item"
+>
+  <div
+    className="message-details"
+  >
+    <div
+      className="avatar-container"
+    >
+      <img
+        alt="user-logo"
+        className="avatar-icon"
+        src="004-jigglypuff.png"
+      />
+    </div>
+    <div
+      className="username"
+    >
+      stub_username 2
+    </div>
+    <div
+      className="posted-at"
+    >
+      00:35
+    </div>
+  </div>
+  <div
+    className="message-text"
+  >
+    stub message
+  </div>
+</div>
+`;

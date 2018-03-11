@@ -1,9 +1,40 @@
-Add your general design and decision comments here:
+My design included state with:
+  messages array
+  connection statues to the server
+  user
+  form for message data
 
+I decided to make the username part of the form, therefore my user contains only avatar and userId
+User are identified only by their userId.
+Therefore user can change it username without affecting the background color of their previous messages
 
+Each message and user have unique id.
+I decided to make the UI design to match AOL - if it's SpotIM chat - let's give it a SpotIM look.
 
+I usually consider it best practice to put all the initialization logic in one place,
+so it's all handled by the AppInitializer
 
+The persistence of the username and avatar is achieved by saving this part of the state in the localStorage.
 
+There were 2 options regarding how to handle rending the client messages
+  1.  Show them on message request, before getting response from the server with some status "pending", and "resent" button.
+      Then remove the pending button when the message receieved from socket.io, and treat it as the last message - pushing it to the end of the messages
+      (due to the fact that there is no indication to the server time when the message received)
+  2.  Show them only when they arrive from socket.io
+I choose option 2 due to the following reasons:
+  1.  As a user, I want to see that the messages are ordered by their time
+      Therefore if there is no indication to the time the message was saved in the server, it's better to use correct time
+      choosing option 1 would mess with the message order and result in confusion among users ("my message suddenly disappeared")
+  2.  It makes the chat message feed consistent between computers - there are no racing conditions between sending and receiving messages.
 
-Feedback regarding this exam is always welcomed.
-What did you like? What didn't you like? What was missing?
+I choose to implement business logic unit-testing + component snapshot test.
+I decided to use also enzyme shallow for the form snapshots - due to issues with redux-form rendering and connect
+
+Some feedback regarding the challange:
+I enjoyed it very much, the documentation in Github is top-notch.
+The only thing that isn't clear is the user avatars -
+I think that instead of putting them in the resources.txt, it's better to use them locally - they belong in the assets folder
+
+Hope to hear from you soon,
+    Tuval Rotem
+

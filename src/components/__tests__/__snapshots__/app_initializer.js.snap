@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppInitializer component renders correctly when the app is initialized - including children 1`] = `
+<div>
+  <div>
+    should see this div
+  </div>
+</div>
+`;
+
+exports[`AppInitializer component renders correctly when the app is uninitialized when did not connect to the server yet 1`] = `
+<div
+  className="loading"
+>
+  loading...
+</div>
+`;
+
+exports[`AppInitializer component renders correctly when the app is uninitialized when server connection uninitialized 1`] = `
+<div
+  className="loading"
+>
+  loading...
+</div>
+`;
+
+exports[`AppInitializer component renders correctly when the app is uninitialized when there is no user 1`] = `
+<div
+  className="loading"
+>
+  loading...
+</div>
+`;

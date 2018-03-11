@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar component renders correctly 1`] = `
+<div
+  className="avatar-container"
+>
+  <img
+    alt="user-logo"
+    className="avatar-icon"
+    src="005-bullbasaur.png"
+  />
+</div>
+`;
