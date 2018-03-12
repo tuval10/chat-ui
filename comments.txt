@@ -30,12 +30,17 @@ I choose option 2 due to the following reasons:
 I choose to implement business logic unit-testing + component snapshot test.
 I decided to use also enzyme shallow for the form snapshots - due to issues with redux-form rendering and connect
 
+I also added prettier + prettier loader in order to achieve better formatting
+(I use it every project and I think it's a mandatory tool)
+
+
 Some feedback regarding the challange:
 I enjoyed it very much, the documentation in Github is top-notch.
 
-I think that for better performance instead of putting the avatars in the resources.txt and fetching them from the server,
+Regarding the avatars. I've talked with dor and he told me that usually what people do is using the external image links in the image src... so I've done it too.
+However, I think that for better performance instead of putting the avatars in the resources.txt and fetching them from the server,
 it's better to put them in the assets folder and use them locally.
-I've talked with dor and he told me that
+
 
 Hope to hear from you soon,
     Tuval Rotem
