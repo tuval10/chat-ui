@@ -12,7 +12,7 @@ const defaultState = {
 };
 
 export default (state = defaultState, action) => {
-  switch(action.type){
+  switch (action.type) {
     case SERVER_CONNECTION_REQUESTED:
       return {
         ...state,
@@ -38,5 +38,4 @@ export default (state = defaultState, action) => {
     default:
       return state;
   }
-}
-
+};

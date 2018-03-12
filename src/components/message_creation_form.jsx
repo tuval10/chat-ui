@@ -1,17 +1,17 @@
-import React, {Component} from 'react'
-import {Field, change, untouch} from 'redux-form';
+import React, { Component } from "react";
+import { Field, change, untouch } from "redux-form";
 import PropTypes from "prop-types";
-export const formName = 'MessageCreationForm';
+export const formName = "MessageCreationForm";
 
-const inputComponent = (field) => {
+const inputComponent = field => {
   let {
-    meta: {touched, error: fieldError},
+    meta: { touched, error: fieldError },
     type,
     placeholder,
-    input,
+    input
   } = field;
   const error = touched ? fieldError : "";
-  const errorClass = (error ? "error-text" : "");
+  const errorClass = error ? "error-text" : "";
   return (
     <div className={"text-field-container " + input.name}>
       <input type={type} placeholder={placeholder} {...input} />
@@ -22,16 +22,18 @@ const inputComponent = (field) => {
 
 class MessageCreationForm extends Component {
   onSubmit(values) {
-    this.props.dispatch(change(formName, 'text', ''));
-    this.props.dispatch(untouch(formName, 'text'));
+    this.props.dispatch(change(formName, "text", ""));
+    this.props.dispatch(untouch(formName, "text"));
     this.props.onSubmit(values);
   }
 
   render() {
-    let {handleSubmit, pristine, submitting} = this.props;
+    let { handleSubmit, pristine, submitting } = this.props;
     return (
-      <form onSubmit={handleSubmit(this.onSubmit.bind(this))}
-            className="form-container">
+      <form
+        onSubmit={handleSubmit(this.onSubmit.bind(this))}
+        className="form-container"
+      >
         <div className="fields-container">
           <Field
             name="username"
@@ -47,10 +49,13 @@ class MessageCreationForm extends Component {
           />
         </div>
         <div className="send-container">
-            <button type="submit" className="send-button brand-bg-color"
-                    disabled={pristine || submitting}>
-              Send
-            </button>
+          <button
+            type="submit"
+            className="send-button brand-bg-color"
+            disabled={pristine || submitting}
+          >
+            Send
+          </button>
         </div>
       </form>
     );

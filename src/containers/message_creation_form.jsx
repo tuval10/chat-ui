@@ -1,20 +1,22 @@
 import { connect } from "react-redux";
-import MessageCreationForm, {formName} from "../components/message_creation_form";
-import { sendMessage} from '../actions/send_message';
-import {v1 as generateUniqueId} from 'uuid';
+import MessageCreationForm, {
+  formName
+} from "../components/message_creation_form";
+import { sendMessage } from "../actions/send_message";
+import { v1 as generateUniqueId } from "uuid";
 import * as moment from "moment";
-import {reduxForm} from 'redux-form';
+import { reduxForm } from "redux-form";
 
-export const validateUsername = ({username = ""}) => {
+export const validateUsername = ({ username = "" }) => {
   if (username === "") {
-    return {username: "Please enter username"};
+    return { username: "Please enter username" };
   }
   return {};
 };
 
-export const validateMessage = ({text = ""}) => {
+export const validateMessage = ({ text = "" }) => {
   if (text === "") {
-    return {text: "Please enter message"};
+    return { text: "Please enter message" };
   }
   return {};
 };
@@ -22,12 +24,12 @@ export const validateMessage = ({text = ""}) => {
 export const validate = values =>
   Object.assign({}, validateUsername(values), validateMessage(values));
 
-const MessageCreationFormContainer =  reduxForm({
+const MessageCreationFormContainer = reduxForm({
   validate,
   form: formName
 })(MessageCreationForm);
 
-const onSubmit = (values) => {
+const onSubmit = values => {
   return sendMessage({
     ...values,
     id: generateUniqueId(),
@@ -39,4 +41,3 @@ export default connect(
   () => ({}),
   { onSubmit } //actions
 )(MessageCreationFormContainer);
-

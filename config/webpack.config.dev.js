@@ -123,6 +123,12 @@ module.exports = {
         include: paths.appSrc,
       },
       {
+        test: /\.(js|jsx)$/,
+        enforce: 'pre',
+        loader: 'prettier-loader',
+        exclude: /node_modules/
+      },
+      {
         // "oneOf" will traverse all following loaders until one will
         // match the requirements. When no loader matches it will fall
         // back to the "file" loader at the end of the loader list.

@@ -1,14 +1,14 @@
-import React, {Component} from 'react'
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import MessageItem from "./message_item";
-import * as moment from 'moment';
+import * as moment from "moment";
 
 class MessagesList extends Component {
   render() {
-    let {messages, myUser} = this.props;
-    return <div className="messages-list">
-      {
-        messages.map(messageProps =>
+    let { messages, myUser } = this.props;
+    return (
+      <div className="messages-list">
+        {messages.map(messageProps => (
           <MessageItem
             {...{
               ...messageProps,
@@ -18,9 +18,10 @@ class MessagesList extends Component {
             }}
             myUser={myUser}
             key={messageProps.id}
-          />)
-      }
-    </div>;
+          />
+        ))}
+      </div>
+    );
   }
 }
 
@@ -32,5 +33,4 @@ MessagesList.propTypes = {
   }).isRequired
 };
 
-
-export default MessagesList
+export default MessagesList;

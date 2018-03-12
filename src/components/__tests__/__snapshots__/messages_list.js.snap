@@ -16,7 +16,7 @@ exports[`MessagesList component renders correctly when there are messages 1`] = 
         <img
           alt="user-logo"
           className="avatar-icon"
-          src="005-bullbasaur.png"
+          src="https://spotim-demo-chat-server.herokuapp.com/avatars/005-bullbasaur.png"
         />
       </div>
       <div
@@ -48,7 +48,7 @@ exports[`MessagesList component renders correctly when there are messages 1`] = 
         <img
           alt="user-logo"
           className="avatar-icon"
-          src="004-jigglypuff.png"
+          src="https://spotim-demo-chat-server.herokuapp.com/avatars/004-jigglypuff.png"
         />
       </div>
       <div

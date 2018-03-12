@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from '../assets/spotim-logo.jpg';
-import {Image} from 'semantic-ui-react';
+import React from "react";
+import logo from "../assets/spotim-logo.jpg";
+import { Image } from "semantic-ui-react";
 import MessageCreationForm from "./message_creation_form";
 import UserAvatar from "./user_avatar";
 import MessagesList from "./messages_list";
-import AppInitializer from "./app_initializer"
+import AppInitializer from "./app_initializer";
 
-const App = () =>
+const App = () => (
   <AppInitializer>
-    <div className={'header'}>
-      <div className={'header-text'}>
-        Welcome to the Spot.IM Chat app
-      </div>
-      <Image size={'tiny'} src={logo}/>
+    <div className={"header"}>
+      <div className={"header-text"}>Welcome to the Spot.IM Chat app</div>
+      <Image size={"tiny"} src={logo} />
     </div>
-    <MessagesList/>
+    <MessagesList />
     <div className="fixed-bottom-container">
-      <UserAvatar/>
-      <MessageCreationForm/>
+      <UserAvatar />
+      <MessageCreationForm />
     </div>
-  </AppInitializer>;
+  </AppInitializer>
+);
 
 export default App;

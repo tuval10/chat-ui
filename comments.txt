@@ -32,8 +32,10 @@ I decided to use also enzyme shallow for the form snapshots - due to issues with
 
 Some feedback regarding the challange:
 I enjoyed it very much, the documentation in Github is top-notch.
-The only thing that isn't clear is the user avatars -
-I think that instead of putting them in the resources.txt, it's better to use them locally - they belong in the assets folder
+
+I think that for better performance instead of putting the avatars in the resources.txt and fetching them from the server,
+it's better to put them in the assets folder and use them locally.
+I've talked with dor and he told me that
 
 Hope to hear from you soon,
     Tuval Rotem

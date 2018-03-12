@@ -13,7 +13,7 @@ exports[`MessageItem component renders correctly when message belongs to user 1`
       <img
         alt="user-logo"
         className="avatar-icon"
-        src="005-bullbasaur.png"
+        src="https://spotim-demo-chat-server.herokuapp.com/avatars/005-bullbasaur.png"
       />
     </div>
     <div
@@ -48,7 +48,7 @@ exports[`MessageItem component renders correctly when message does not belong to
       <img
         alt="user-logo"
         className="avatar-icon"
-        src="004-jigglypuff.png"
+        src="https://spotim-demo-chat-server.herokuapp.com/avatars/004-jigglypuff.png"
       />
     </div>
     <div

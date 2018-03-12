@@ -7,7 +7,7 @@ exports[`Avatar component renders correctly 1`] = `
   <img
     alt="user-logo"
     className="avatar-icon"
-    src="005-bullbasaur.png"
+    src="https://spotim-demo-chat-server.herokuapp.com/avatars/005-bullbasaur.png"
   />
 </div>
 `;

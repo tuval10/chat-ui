@@ -1,12 +1,12 @@
 import thunk from "redux-thunk";
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import logger from "redux-logger";
-import messages from "./reducers/messages_reducer"
-import user from "./reducers/user_reducer"
-import serverConnection from "./reducers/server_connection_reducer"
+import messages from "./reducers/messages_reducer";
+import user from "./reducers/user_reducer";
+import serverConnection from "./reducers/server_connection_reducer";
 import { reducer as formReducer } from "redux-form";
 import { loadState, saveState } from "./services/localStorage";
-import {throttle, pick} from 'lodash';
+import { throttle, pick } from "lodash";
 
 const middlewares = [thunk, logger];
 const configureStore = () => {
@@ -28,7 +28,7 @@ const configureStore = () => {
 
   store.subscribe(
     throttle(() => {
-      let currentState = pick(store.getState(), ['form', 'avatar']);
+      let currentState = pick(store.getState(), ["form", "avatar"]);
       saveState(currentState);
     }, 1000)
   );

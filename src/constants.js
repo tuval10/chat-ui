@@ -8,6 +8,6 @@ export const AVATAR_IMAGES = [
 
 export const PIKACHU = "003-pikachu.png";
 
-export const MESSAGE_EVENT = 'spotim/chat';
+export const MESSAGE_EVENT = "spotim/chat";
 
 export const SERVER_ADDRESS = "https://spotim-demo-chat-server.herokuapp.com";
