@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import MessageCreationForm, {formName} from "../components/message_creation_form";
 import { sendMessage} from '../actions/send_message';
-import {v4 as generateUniqueId} from 'node-uuid';
+import {v1 as generateUniqueId} from 'uuid';
 import * as moment from "moment";
 import {reduxForm} from 'redux-form';
 

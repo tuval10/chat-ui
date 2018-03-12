@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import AppInitializer from "../components/app_initializer";
 import { initialize as _initialize} from '../actions/initialize_app';
-import {v4 as generateUniqueId} from 'node-uuid';
+import {v1 as generateUniqueId} from 'uuid';
 import {AVATAR_IMAGES} from "../constants"
 
 const generateRandomImageIndex = () => (Math.floor(Math.random() * AVATAR_IMAGES.length));
